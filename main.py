@@ -5,7 +5,7 @@ from music21 import *
 from generator import Generator
 from genetics import Genetics
 
-def run():
+def main():
     generator = Generator()
     genetics = Genetics()
     input_song = converter.parse('input1.mid') # parsing the input
@@ -33,10 +33,6 @@ def run():
         s.append(m)
 
     s.write('mid','MohamedHamdyOutput1.mid') # writing the best individual to midi file
-
-def main():
-    run()
-
 
 if __name__ == '__main__':
     main()
